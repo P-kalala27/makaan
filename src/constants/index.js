@@ -1,1 +1,1 @@
-export const Menu = ["HOME", "About us", "Properties", "Pages", "contact"]
+export const Menu = ["HOME", "About", "Properties", "Pages", "contact"]
