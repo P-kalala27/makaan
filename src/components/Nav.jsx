@@ -10,7 +10,7 @@ const Nav = () => {
   return (
     <div className="fixed z-10 lg:w-[1300px] inset-x-0 lg:inset-y-10 mx-auto">
         <nav className={` flex flex-wrap justify-between items-center w-full
-          shadow h-auto rounded lg:bg-slate-200 px-4 pb-5 lg:py-0  py-5 
+          shadow h-auto  lg:bg-slate-200 px-4 pb-5 lg:py-0  py-5 
           bg-gray-100 transition duration-300 ease-in-out`}>
         <a href="/home">
             <h2 className=" font-bold text-4xl">Makaan</h2>
