@@ -6,12 +6,20 @@ const Search = () => {
   return (
     <div className="bg-green-300 mt-8 lg:mt-0">
         <div>
-          <div className="p-10 flex flex-col justify-between py-4">
-             <div>
-              <input type="Search Keyword" />
+          <div className="pt-10 pb-5 px-10 flex flex-col">
+             <div className="w-full pb-3">
+             <input className="placeholder:italic placeholder:text-slate-400
+              block bg-white 
+             w-full border border-slate-300 rounded-md
+              py-4 pl-9  shadow-sm focus:outline-none
+                focus:ring-1 sm:text-sm" placeholder="Search Keyword"
+                 type="text" name="search"
+                 />
              </div>
-             <div>
-              <select name="Property Type" id="">
+             <div className="pb-3">
+              <select name="Property Type" id=""
+               className="bg-white w-full border-slate-300 rounded-md
+               py-4 pl-9 shadow-sm focus:outline-none focus:ring-1">
                 <option value={""}>Property Type</option>
               {
                 option.map((item, index) => {
@@ -22,8 +30,10 @@ const Search = () => {
               }
               </select>
              </div>
-             <div>
-              <select name="Property Type" id="">
+             <div className="pb-3">
+              <select name="Property Type" id=""
+              className="bg-white w-full border-slate-300 rounded-md
+              py-4 pl-9 shadow-sm focus:outline-none focus:ring-1">
                 <option value={""}>Location</option>
               {
                 location.map((item, index) => {
@@ -35,7 +45,7 @@ const Search = () => {
               </select>
              </div>
              <div>
-             <Button title={"Get Started"} style={"py-4 px-10 me-3 rounded-lg text-2xl mb-14"}/>
+             <Button title={"Search"} style={"py-4 w-full me-3 rounded-lg text-2xl mb-14"}/>
              </div>
           </div>
         </div>
