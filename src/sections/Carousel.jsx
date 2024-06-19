@@ -1,6 +1,7 @@
 import carousel2 from "../assets/images/carousel-1.jpg";
 import Button from "../components/Button";
 import Nav from "../components/Nav";
+import Search from "./Search";
 
 const Carousel = () => {
   return (
@@ -19,9 +20,9 @@ const Carousel = () => {
             </button>
             </div>
         </div>
-        <div className="mt-8 w-2/3 mx-auto p-5
+        <div className="mt-8 w-3/4 mx-auto p-2
         lg:w-2/4 lg:p-2  lg:flex lg:flex-col lg:px-10">
-            <h1 className=" animate-fadeIn lg:leading-tight text-3xl text-black
+            <h1 className=" animate-fadeIn lg:leading-tight text-4xl text-black
              text-wrap font-bold mb-4 pt-2 lg:text-5xl">
                 Find A  
                  <span className="text-green-400"> Perfect Home  </span>
@@ -32,10 +33,11 @@ const Carousel = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit pariatur libero nostrum debitis rem architecto?
             </p>
             <div className="mt-10 lg:mt-2">
-            <Button title={"Get Started"} style={"py-4 px-8 me-3 rounded-lg text-2xl"}/>
+            <Button title={"Get Started"} style={"py-4 px-8 me-3 rounded-lg text-2xl mb-14"}/>
             </div>
         </div>
     </div>
+        <Search/>
     </>
   )
 }
